@@ -1,0 +1,126 @@
+<!doctype html>
+<!--Project 2 by Emanuel Mesak-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+    <title>Project 2 - Homepage</title>
+  </head>
+  <body>
+    <div class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top container">
+            <h1 class="animate__animated animate__heartBeat animate__repeat-3 text-light mt-3">Stone Cold's Groceries</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="products.html">Products</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Checkout<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h2 class="display-4 text-center mt-4">Checkout</h2>
+
+    <form method="GET" class="m-5">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputNameF">First Name</label>
+          <input type="text" name="firstName" class="form-control" id="inputNameF" placeholder="Steve" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputNameL">Last Name</label>
+          <input type="text" name="LastName" class="form-control" id="inputNameL" placeholder="Austin" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Austin316@hotmail.com" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St" required>
+      </div>
+      <div class="form-group col-md-8">
+        <label for="inputCreditCard">Credit Card No.</label>
+        <input type="text" class="form-control" id="inputCreditCard" placeholder="1234-5678-9101-1213" required>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCVC">CSC/CVC No.</label>
+        <input type="text" class="form-control" id="inputCVC" placeholder="619" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" name="city" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" name="state" class="form-control">
+            <option selected>Choose...</option>
+            <option>Texas</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" name="zip" class="form-control" id="inputZip">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" name="spam" required>
+          <label class="form-check-label" for="gridCheck">
+            Sign up for email notifications. You know you want to...
+          </label>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <button type="submit" class="btn btn-success text-center">Pay Up</button>
+      </div>
+    </form>
+
+    <div class="bg-dark text-white text-center py-4">
+      Copyright 2021 <i class="fas fa-skull-crossbones"></i>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

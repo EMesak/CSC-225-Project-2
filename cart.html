@@ -1,0 +1,179 @@
+<!doctype html>
+<!--Project 2 by Emanuel Mesak-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+    <title>Project 2 - Cart</title>
+  </head>
+  <body>
+    <div class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top container">
+            <h1 class="animate__animated animate__heartBeat animate__repeat-3 text-light mt-3">Stone Cold's Groceries</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">Checkout</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h2 class="display-5 text-center mt-3">Cart</h2>
+
+    <div class="container">
+      <div class="row mt-3 mb-3 justify-content-center">
+        <div class="col-lg">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Beans</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Beer</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Cereal</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Coffee Beans</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Crackers</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Diapers</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Eggs</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Flour</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Flowers</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Grey Poupon</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Ketchup</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>Milk</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>Oranges</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>Potatoes</td>
+                <td>$3.16</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg">
+          <div class="card mx-auto mb-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Promo Code</h5>
+              <h6 class="card-subtitle mb-3 text-muted">If you've received a promo code for a discount, please put it here, it will totally work</h6>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="AUSTIN316" aria-label="AUSTIN316" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn text-light bg-dark" type="button" id="button-addon2">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="jumbotron text-center">
+            <h2 class="display-5 text-center">Order Summary</h2>
+            <p class="lead"><b>Total Items: </b> 14</p>
+            <p class="lead"><b>Subtotal Price: </b> $44.24</p>
+            <p class="lead"><b>Tax: </b> A Lot</p>
+            <hr class="my-4">
+            <p class="lead"><b>Total: </b> $316 (Just trust us, we did the math on this one)</p>
+            <a class="btn btn-success btn-lg" href="checkout.html" role="button">Go To Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark text-white text-center py-4">
+      Copyright 2021 <i class="fas fa-skull-crossbones"></i>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
